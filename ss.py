@@ -28,4 +28,11 @@ elif data == "About":
         # name = st.text_input("Name1")
         st.image("https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?cs=srgb&dl=cascade-clouds-cool-wallpaper-210186.jpg&fm=jpg")
 elif data == "contact":
+
     st.header("contact page")
+    name=st.text_input("name")
+    number = st.text_input("enter number")
+    mail = st.text_input("enter mail:")
+    queries = st.text_area("enter queries:")
+    if st.button("submit"):
+        st.success("queries sent successfully")
